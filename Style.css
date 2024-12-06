@@ -1,0 +1,149 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'outfit';
+  background: linear-gradient(to bottom, #d9e4c3 0%,#dfeaca 5%,#e3edd2 7%,#e5efd6 12%,#e7eed4 17%,#e3edd2 19%,#e3edd2 22%,#e3eed0 23%,#e1ebd2 24%,#e1eccc 24%,#dfeac9 29%,#dae7c5 32%,#dae8c1 32%,#d9e6c2 33%,#dae5c3 34%,#e4ecd4 34%,#ecf2e0 34%,#eaefde 36%,#e7eed8 36%,#e3efd7 37%,#e4edd8 37%,#e4eed3 38%,#e5e9d2 38%,#e1ebd2 39%,#dfe9ce 40%,#dee8cd 42%,#dce6cb 42%,#dbe6c5 45%,#dbe6c8 45%,#dae5c5 46%,#d9e4c4 48%,#d9e3ca 48%,#d9e4c4 49%,#d9e4c3 52%,#d7e2c1 52%,#d9e4c4 52%,#d8e2c2 53%,#d6e2c6 53%,#d6e3c2 54%,#d9e4c3 55%,#d5e2c0 56%,#d5e2c0 56%,#d3e2c5 57%,#d4e3c2 59%,#d2e0c6 60%,#d5e2c0 61%,#d1e0bf 68%,#d1e1bc 68%,#d1e0bf 69%,#d1e1be 73%,#cfdfbc 74%,#cfdfbc 76%,#cedeb7 76%,#cdddb8 82%,#c9ddb7 83%,#ccdcb7 85%,#c6dcb5 85%,#c6dcb6 87%,#c6ddb1 88%,#c5dbb4 88%,#c5dbb4 89%,#c5dcb0 90%,#c5dcb0 90%,#c5dbb6 91%,#c5dcb2 92%,#c2deae 92%,#c5ddb1 92%,#d6e1c1 93%,#d7e2c2 100%)
+}
+
+.contract-container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contract-left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.contracts-left-tittle h2{
+  font-weight: 600;
+  color: #8fc800;
+  font-size: 40px;
+  margin-bottom: 5px
+}
+
+.contracts-left-tittle hr{
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #8fc800;
+  border-radius: 10px;
+  margin-bottom: 20px
+}
+
+.contract-inputs{
+  width: 400px;
+  height: 50px;
+  outline: none;
+  border: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+}
+
+.contract-left textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+.contract-inputs:focus{
+  border: 2px solid #ff994f;
+}
+
+.contract-inputs:placeholder{
+  color: #a9a9a9;
+}
+
+/*:root {
+  --button-gradient: linear-gradient(to bottom, #d2ff52 0%, #91e842 100%);
+}*/
+
+.contract-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(to bottom, #d2ff52 0%, #91e842 100%); /* Button background */
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; /* Ensure no content spills out */
+}
+
+.contract-left .container-icon {
+  position: relative;
+  width: 20px; /* Size adjusted for icon */
+  height: 20px;
+  display: inline-block;
+}
+
+.contract-left .container-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1; /* Below the gradient overlay */
+}
+
+.contract-left .container-icon .gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom,  #c0f860 0%,#a9ef59 100%); /* Match button gradient */
+  mix-blend-mode: multiply; /* Blend with the image */
+  opacity: 1; /* Adjust transparency for consistency */
+  z-index: 2; /* Above the image */
+}
+
+
+.contract-right {
+  position: relative;
+  width: 500px; /* Size adjusted for icon */
+  height: 500px;
+  display: inline-block;
+}
+
+.contract-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1; /* Below the gradient overlay */
+}
+
+.contract-right .gradient-overlay-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #d4e1c4 0%,#d4e2c7 1%,#d5e3c4 6%,#d2e0c7 8%,#d5e2c1 11%,#d2e0c1 27%,#d1e0be 28%,#d2e0c1 30%,#d2e1c0 39%,#cfdebd 42%,#d0dfbe 47%,#ceddb9 47%,#ceddba 61%,#c9dcb8 64%,#ccdcb9 69%,#c6dbb7 69%,#c7dcb8 74%,#c6dcb3 76%,#c5dab6 76%,#c5dab6 78%,#c5dbb2 81%,#c6dbb8 83%,#c5dbb4 85%,#c7ddb4 86%,#d6e1c3 88%,#d7e1c3 88%,#d7e1c3 100%); /* Match button gradient */
+  mix-blend-mode: multiply; /* Blend with the image */
+  opacity: 1; /* Adjust transparency for consistency */
+  z-index: 2; /* Above the image */
+}
+
+
+
+@media (max-width: 800px){
+ .contract-inputs{
+   width:80vw;
+ }
+ .contract-right{
+   display: none;
+ }
+}
